@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Tailwindcss</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="relative container mx-auto p-6">
+        <!-- Flex container -->
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+            <div class="pt-2">
+                <img src="img/logo.svg" alt="">
+            </div>
+            <!-- Menu -->
+            <div class="hidden space-x-6 md:flex">
+                <a href="#" class="hover:text-darkGrayishBlue">Home</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Products</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+                <a href="#" class="hover:text-darkGrayishBlue">About us</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Career</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+            </div>
+            <!-- Button -->
+            <a href="#" class="hidden px-1 p-2 text-white text-sm bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block md:px-3">
+                Get Started
+            </a>
+        </div>
+    </nav>
+    <div id="hero">
+        <div class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:flex-row md:space-y-0">
+            <!-- Left item -->
+            <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+                <h1 class="max-w-md text-3xl font-bold text-center md:text-5xl md:text-left">
+                    Bring everyone together to build a better product
+                </h1>
+                <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+                    Manage makes it simple for a software team to manage their day-to day tasks while keeping their larger team goals in view
+                </p>
+                <!-- Button -->
+                <div class="flex justify-center md:justify-start"></div>
+                <a href="#" class="p-3 px-6 pt-4 max-w-sm text-white text-center bg-brightRed rounded-full baseline hover:bg-brightRedLight">
+                Get Started
+            </a>
+
+            </div>
+            <!-- Image -->
+            <div class="w-1/2">
+                <img src="/img/illustration-intro.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container flex flex-col mx-auto pb-3 justify-center md:justify-start md:flex-row">
+            <!-- Left-Item -->
+            <div class="flex flex-col md:w-1/2">
+                <h1 class="max-w-md text-3xl font-bold text-center md:text-5xl md:text-left">
+                    What's difference about manage?
+                </h1>
+                <p class="max-w-sm mt-6 pt-2 text-center text-darkGrayishBlue md:text-left">
+                    Manage provide all the functionalities your team needs, wihout the complexity. Our softwaee is tailor-made for moderndigital product team
+                </p>
+            </div>
+            <div class="flex flex-col">
+                <div class="flex mt-4">
+                    <div class="p-2  max-w-sm h-10 text-white text-center bg-brightRed rounded-full baseline hover:bg-brightRedLight">
+                        01
+                    </div>
+                    <h1 class="text-xl font-bold ml-3 text-center bg-brightRedLight py-1 px-4 rounded-full">Track company wide-progress</h1>
+                </div>
+                <p class="max-w-sm mt-4 pt-2 pl-12 justify-left text-darkGrayishBlue">
+                    Manage provide all the functionalities your team needs, wihout the complexity. Our softwaee is tailor-made for moderndigital product team
+                </p>
+                <div class="flex mt-4">
+                    <div class="p-2 max-w-sm h-10 text-white justify-left bg-brightRed rounded-full baseline hover:bg-brightRedLight">
+                        02
+                    </div>
+                    <h1 class="text-2xl font-bold ml-3">Track company wide-progress</h1>
+                </div>
+                <p class="max-w-sm mt-4 pt-2 ml-4 justify-left text-darkGrayishBlue">
+                    Manage provide all the functionalities your team needs, wihout the complexity. Our softwaee is tailor-made for moderndigital product team
+                </p>
+            </div>
+            <!-- Right Item-->
+        </div>
+    </div>
+</body>
+
+</html>
