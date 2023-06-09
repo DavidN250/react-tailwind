@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Gmail Clone</title>
 </head>
 <body class="bg-green-50">
     <div class="hidden flex-row justify-between md:flex">
-        <div class="flex gap-2 ml-3 mt-2">
-            <i class="fa fa-bars rounded-full hover:bg-slate-300 p-4"></i>
-            <img src="img/logo_gmail_lockup_default_1x_r5.png" alt="">
+        <div class="flex gap-1 ml-3 mt-2">
+            <i class="fa fa-bars rounded-full hover:bg-slate-300 p-5"></i>
+            <a href="" class="mt-2"><img src="img/logo_gmail_lockup_default_1x_r5.png" alt=""></a>
         </div>
         <div class="mt-2 w-2/3 ml-11">
             <form class="w-full max-w-6xl">
@@ -26,7 +27,7 @@
             </form>
         </div>
         <div class="flex justify-between gap-3 p-2">
-         <i class="fa fa-question rounded-full hover:bg-slate-300 p-4"></i>
+         <i class="fa fa-question rounded-full px-5 hover:bg-slate-300 p-4"></i>
          <i class="fa fa-gear rounded-full hover:bg-slate-300 p-4"></i>
          <i class="fa-regular fa-ellipsis-vertical"></i>
          <div>
@@ -36,6 +37,9 @@
     </div>
 
     <div class="flex justify-between flex-row">
+
+        <!-- Side menu section -->
+
         <div class="flex flex-col gap-3 text-lg w-1/6">
             <div class="bg-veryLightGray ml-2 rounded-xl px-2 py-4 text-center my-4 mr-10">
                 <i class="fa fa-edit"><span class="pl-4">Compose</span></i>
@@ -63,22 +67,56 @@
                     </li>
                 </ul>
         </div>
-        <div class="flex flex-column border w-4/5 mt-2 h-96 bg-slate-50 mr-1 rounded-lg p-2">
-         <div class="flex flex-row p-2 justify-items-center">
-            <div>
-                <i class="fa fa-square-o"></i>
-                <i class="fa fa-chevron-down"></i>
-                <i class="fa fa-refresh"></i>
-                <i class="fa fa-ellipse-verticle"></i>
+
+        <!-- Messages section -->
+
+        <div class="flex flex-col border w-4/5 mt-2 h-96 bg-slate-50 mr-1 rounded-lg p-2">
+        
+         <!-- Top tools -->
+         <div class="flex flex-row p-2 justify-between  w-full">
+            <div class="justify-start flex flex-row gap-4 top-0">
+                <div>
+                <i class="far fa-stop"></i>
+                <i class="fas fa-sort-down"></i>
+                </div>
+                <i class="fas fa-rotate-right"></i>
+                <i class="fas fa-ellipse-verticle"></i>
             </div>
-            <div>
-                <i class="fa fa-square-o"></i>
-                <i class="fa fa-chevron-down"></i>
-                <i class="fa fa-refresh"></i>
-                <i class="fa fa-ellipse-verticle"></i>
+            <div class="justify-end flex flex-row gap-4 top-0">
+                <a><span>1-50 of 317</span></a>
+                <a><i class="fa fa-chevron-left"></i></a>
+                <a><i class="fa fa-chevron-right"></i></a>
             </div>
             
          </div>
+
+         <!-- Tabs -->
+
+         <div class="flex border-b-2">
+            <div class="p-4 w-1/4 pr-10 hover:bg-slate-100">
+                <span>Primary</span>
+            </div>
+            <div class="p-4 w-1/4  pr-10 hover:bg-slate-300">
+                <span>Promotion</span>
+            </div>
+            <div class="p-4 w-1/4  pr-10 hover:bg-slate-300">
+                <span>Social</span>
+            </div>
+         </div>
+
+        </div>
+        
+        <!-- Wigdets -->
+
+        <div class=" w-auto mt-4">
+             <div class="justify-center flex flex-col gap-4">
+                <i class="fa fa-calendar hover:rounded-full hover:bg-slate-300 p-4"></i>
+                <i class="fa fa-lightbulb hover:rounded-full hover:bg-slate-300 p-4"></i>
+                <i class="fa fa-check hover:rounded-full hover:bg-slate-300 p-4"></i>
+                <i class="fa fa-user hover:rounded-full hover:bg-slate-300 p-4"></i>
+                <hr>
+                <i class="fa fa-plus hover:rounded-full hover:bg-slate-300 p-4"></i>
+            </div>
         </div>
     </div>
 </body>
